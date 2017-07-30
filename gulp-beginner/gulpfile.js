@@ -121,5 +121,20 @@ gulp.task('clean:dist',function(){
 /* Here's the syntax of a task sequence with run sequence: */
 gulp.task('task-name', function(callback){
     runSequence('task-one','task-two','task-three',callback);
-})
+});
 
+/* syntax gulp multi */
+gulp.task('task-name',function(callback){
+    runSequence('task-one',['task','two','run','in','paralel'],callback);
+});
+
+/* result */
+gulp.task('build',function(callback){
+    runSequence('clean:dist',
+    ['sass','useref','images','fonts'],
+    callback)
+});
+gulp.task('default',function(callback){
+    runSequence(['sass','browserSync','watch'],
+    callback)
+});
