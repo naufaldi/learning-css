@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>React JS in SAP</title>
+    <style>
+     body {
+         background-color: #ffcc00;
+         padding: 20px;
+         margin: 0;
+     }
+        h1,h2,h3,h4,h5,p,ul,li {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+        ul.header li {
+            display: inline-block;
+            list-style-type: none;
+            margin: 0;
+        }
+        ul.header {
+            background-color: #111;
+            padding: 0;
+        }
+        ul.header li a{
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 20px;
+            display: inline-block;
+        }
+        .content {
+            background-color: #fff;
+            padding: 20px;
+        }
+        .content h2 {
+            padding: 0;
+            margin: 0;
+        }
+        .content li {
+            margin-bottom: 10px;
+        }
+    </style>
+     <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script src="https://npmcdn.com/react-router@3.0.2/umd/ReactRouter.min.js"></script>
+  
+</head>
+<body>
+  <div id="container">
+      
+  </div>  
+  <script type="text/babel">
+    var {
+        Router,
+        Route,
+        IndexRoute,
+        IndexLink,
+        hashHistory,
+        Link } = ReactRouter;
+    var destination = document.querySelector("#container");
+    var Home = React.createClass({
+        render: function () {  
+            return(
+                <div>
+                    <h2> Hello</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur 
+                        adipisicing elit. Error, tempora eaque odit repellendus nulla, 
+                        mollitia asperiores magnam architecto quae expedita eos, facere
+                         excepturi ad possimus natus optio explicabo, ipsam adipisci.</p>
+                </div>
+            );
+        }
+    });
+    var Contact = React.createClass({
+        render: function () {
+            return (
+                <div>
+                    <h2> Contact</h2>
+                    <p> Lorem ipsum dolor sit amet, 
+                        consectetur adipisicing elit. Est laudantium sit 
+                        accusamus dolorum autem! Dignissimos libero quas tempora,
+                         aliquid aut accusantium, officiis ducimus laborum 
+                         reprehenderit dolores delectus, aperiam ab explicabo!</p>
+                    <a href="google.com">Link Contact</a>
+                </div>
+            );
+        }
+    });
+    var Stuff = React.createClass({
+        render: function () {
+            return (
+                <div>
+                    <h2> Stuff</h2>
+                    <p> List To Make Nice</p>
+                    <ol>
+                        <li>Makan</li>
+                        <li>Nasi</li>
+                        <li>Wortel</li>
+                        <li>Die</li>
+                    </ol>
+                </div>
+            );
+        }
+    })
+    var App = React.createClass({
+        render: function () {
+            return(
+                <div>
+                    <h1> Simple SPA </h1>
+                    <ul className="header">
+                        <li> <Link to="/"> Home</Link> </li>
+                        <li> <Link to="/stuff">Stuff</Link>  </li>
+                        <li> <Link to="/contact">Contact</Link>  </li>
+                    </ul>
+                    <div className="content">
+                        {this.props.children}
+                    </div>
+                </div>
+            )
+        }
+    });
+    ReactDOM.render(
+        // <div>
+        //     <App/> 
+        // </div>,
+        <Router history={hashHistory}>
+         <Route path="/" component={App}>
+            <IndexRoute component={Home}/>
+            <Route path="stuff" component={Stuff}/>
+            <Route path="contact" component={Contact}/>
+         </Route>
+        </Router>,
+        destination
+    );
+    </script>
+</body>
+</html>
