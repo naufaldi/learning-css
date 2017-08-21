@@ -29,6 +29,19 @@
     <!-- <script src="js/main.js"></script> -->
     <script src="js/jquery.mixitup.min.js"></script>
     <script>
+        function checkScroll(){
+            var startY =$('.navbar').height()* 2;
+            if($(window).scrollTop()> startY){
+                $('.navbar').addClass("scrolled");
+            } else{
+                $('.navbar').removeClass('scrolled');
+            }
+        }
+        if($('.navbar').length> 0 ){
+            $(window).on("scroll load resize", function(){
+                checkScroll();
+            });
+        }
     $(function () {
 		
 		var filterList = {
@@ -117,10 +130,10 @@
     </header>
 
     <!-- Content Section -->
-    <section>
-        <div class="container">
+    <section id="about">
+        <div class="container" >
             <div class="row">
-                <h1 class="section-heading center">ABOUT</h1>
+                <h1 class="section-heading line-side"><span>  ABOUT  </span></h1>
                 <div class="col-lg-6">                    
                     <img src="http://placehold.it/200x200&text=Logo" alt="" class="img-responsive img-center img-circle">
                     <blockquote cite="">
@@ -150,7 +163,7 @@
        <!-- Content Section -->
     <section>
     	<div class="container">
-            <h1 class="section-heading">Portfolio</h1>
+            <h1 class="section-heading line-side"><span>Portfolio</span></h1>
             <div class="header-bar"></div>
 		<ul id="filters" class="clearfix">
 			<li><span class="filter active" data-filter=".app, .javascript, .landing-page, .sistem">All</span></li>
@@ -268,7 +281,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="section-heading">Contact</h1>
+                    <h1 class="section-heading line-side"><span>Contact</span></h1>
                     <p class="lead section-lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     <p class="section-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
                 </div>
