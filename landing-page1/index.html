@@ -21,27 +21,36 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="css/full-width-pics.css" rel="stylesheet">
      <!-- Bootstrap Core JavaScript -->
+       <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+  
     <!-- jQuery -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script> -->
 
     <!-- Custom JS -->
     <!-- <script src="js/main.js"></script> -->
     <script src="js/jquery.mixitup.min.js"></script>
     <script>
-        function checkScroll(){
-            var startY =$('.navbar').height()* 2;
-            if($(window).scrollTop()> startY){
-                $('.navbar').addClass("scrolled");
-            } else{
-                $('.navbar').removeClass('scrolled');
+        // function checkScroll(){
+        //     var startY =$('.navbar').height()* 2;
+        //     if($(window).scrollTop()> startY){
+        //         $('.navbar').addClass("scrolled");
+        //     } else{
+        //         $('.navbar').removeClass('scrolled');
+        //     }
+        // }
+        // if($('.navbar').length> 0 ){
+        //     $(window).on("scroll load resize", function(){
+        //         checkScroll();
+        //     });
+        // }
+        $(window).scroll(function(){
+            if($(window).scrollTop()>=50){
+                $('.navbar-inverse').addClass('scrolled');
+            }else {
+                $('.navbar-inverse').removeClass('scrolled');
             }
-        }
-        if($('.navbar').length> 0 ){
-            $(window).on("scroll load resize", function(){
-                checkScroll();
-            });
-        }
+        });
     $(function () {
 		
 		var filterList = {
@@ -93,7 +102,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">NRS</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
