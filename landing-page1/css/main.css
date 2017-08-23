@@ -1,6 +1,9 @@
 body {
 	font-family: 'Montserrat0',Arial, Helvetica, sans-serif;
 }
+img {
+
+}
 .navbar-inverse .navbar-brand {
 	color: #fff;
 }
@@ -35,28 +38,28 @@ body {
 	background-color: rgba(255, 255, 255, 0.1);
 } 
 .scrolled {
-	background-color: #e95a44;
+	background-color: #464646;
 	/* color: #000;
 	border-color: #ababab; */
-	box-shadow: 0px 3px 3px #888888;
+	box-shadow: 0px 2px 2px #464646;
 }
-/* .scrolled .navbar-nav>li>a {
-	color: #000;
+ .scrolled .navbar-nav>li>a {
+	color: #fff;
 	text-transform: uppercase;
 }
 .scrolled .navbar-nav>li>a:hover,
 .scrolled .navbar-nav>li>a:focus {
-	color: #ccc;
-	background-color: rgba(255, 255, 255, 0.5);
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.1);
 } 
 .scrolled .navbar-brand {
-	color: #000;
+	color: #fff;
 }
 .scrolled .navbar-brand a:hover,
 .scrolled .navbar-brand a:focus {
-		color: #000;
+		color: #fff;
 	background-color: rgba(255, 255, 255, 0.5);
-} */
+} 
 
 /* Header */
 header {
@@ -64,7 +67,7 @@ header {
 }
 
 .line-side {
-	line-height: 0.2;
+	line-height: 0.05;
 	text-align: center;
 }
 .line-side span{
@@ -74,6 +77,16 @@ header {
 }
 .line-side span:before,
 .line-side span:after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	top: 0;
+	width: 100%;
+}
+#portfolio .line-side span:before,
+#portfolio .line-side span:after {
 	content: "";
 	position: absolute;
 	height: 5px;
@@ -125,6 +138,7 @@ header {
 	text-align: center;
 }
  
+
 #filters {
 	margin:1%;
 	padding:0;
@@ -148,8 +162,18 @@ header {
 		color:#fff;
 	}
  
+
 #about {
-	background-color: #fafafa;
+	background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7));
+	background-repeat:  no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	/* height: 450px; */
+	/* padding-top: 50px; */
+}
+.img-circle {
+	box-shadow: 2px 2px 2px #888888;
 }
  
 #portfoliolist .portfolio {
@@ -215,6 +239,32 @@ header {
     top:-30px;
   }
 
+
+.bg-overlay {
+	 background: 
+     /* top, transparent black, faked with gradient */ 
+     linear-gradient(
+         rgba(75,178,134,0.5), rgba(75,178,134,0.5)
+     ),
+    url('../image/black-overlay.jpg');
+	
+	background-repeat:  no-repeat;
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	  height: 100%;
+    width: 100%;
+    height:calc(100% - 1px);
+    padding: 200px 0; 
+	margin-top:0; 
+	box-shadow: 0px 5px 5px #888888;
+}
+
+footer {
+	color: #ccc;
+	background-color: #464646;
+	padding: 20px;
+}
 
 /* #Tablet (Portrait) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
