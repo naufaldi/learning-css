@@ -1,3 +1,11 @@
+.profile-img {
+  border-radius: 500px;
+  height: 200px;
+  width: 200px;
+  border: 3px solid seagreen;
+}
+
+/* Extend Code */
 h1 {
   color: green;
   background-color: #ababab;
@@ -5,6 +13,7 @@ h1 {
 
 p {
   color: green;
+  font-size: 24px;
 }
 
 nav ul {
@@ -27,4 +36,46 @@ nav a {
 
 nav a:hover {
   background: #16a085;
+}
+
+.panel, .little-panel, .big-panel {
+  border: 3px solid #16a085;
+  background: lightblue;
+  margin: 2px;
+}
+
+.little-panel {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.big-panel {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 20px;
+}
+
+/* Button */
+.button, .jumbo-button, .light-button {
+  background: green;
+  color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.jumbo-button {
+  padding: 15px;
+}
+
+.light-button {
+  background: #00c000;
 }

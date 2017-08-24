@@ -1,9 +1,12 @@
+@import "profile";
+
 $primary-color : green;
 $secondary-color: #ababab;
 $bg-color: #2c3e50;
 $hover-color: #16a085;
 $text-color: #ffffff;
 
+/* Extend Code */
 
 h1 {
     color: $primary-color;
@@ -11,6 +14,7 @@ h1 {
 }
 p{
     color: $primary-color;
+    font-size: 24px;
 }
 
 nav {
@@ -33,4 +37,51 @@ nav {
         background: $hover-color;
 
     }
+}
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+
+}
+.panel {
+    border: 3px solid #16a085;
+    background: lightblue;
+    margin: 2px;
+}
+.little-panel {
+    @extend .panel ;
+    @include border-radius(5px);
+    font-size: 14px;
+    padding: 10px;
+}
+.big-panel {
+    @extend .panel;
+    @include border-radius(10px);
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Button */
+$button-bg: green;
+$button-color: #fff;
+$button-padding: 5px;
+
+.button {
+    background: $button-bg;
+    color: $button-color;
+    border-radius: 10px;
+    display: inline-block;
+    padding: $button-padding;
+    text-decoration: none;
+}
+
+.jumbo-button {
+    @extend .button ;
+    padding: $button-padding + 10px;
+}
+.light-button {
+    @extend .button;
+    background: $button-bg * 1.5;
 }
