@@ -1,0 +1,30 @@
+h1 {
+  color: green;
+  background-color: #ababab;
+}
+
+p {
+  color: green;
+}
+
+nav ul {
+  background: #2c3e50;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 16px;
+}
+
+nav a:hover {
+  background: #16a085;
+}
