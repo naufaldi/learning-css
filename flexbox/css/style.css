@@ -1,0 +1,14 @@
+ul {
+    display: flex;
+    list-style: none;
+    /* flex-direction: row || column || row-reverse || column-reverse; */
+    flex-wrap: wrap || nowrap || wrap-reverse;
+    /*Keep on taking more flex items 		    breaking (wrapping)*/
+}
+
+li {
+    width: 100px;
+    height: 100px;
+    background-color: #8cacea;
+    margin: 8px;
+}
