@@ -1,0 +1,21 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+.facebook-style-btn {
+    border-radius: 2px;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+.facebook-style-dark {
+    -moz-box-shadow: inset 0 1px 0 0 #4d73bf;
+    -webkit-box-shadow: inset 0 1px 0 0 #4d73bf;
+    box-shadow: inset 0 1px 0 0 #4d73bf;
+    background: #4267b2;
+    border: solid 1px #4267b2;
+    color: white;
+    text-shadow: 0 1px 0 #3359a5;
+}
