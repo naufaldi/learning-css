@@ -19,3 +19,143 @@
     color: white;
     text-shadow: 0 1px 0 #3359a5;
 }
+
+.facebook-style-dark:hover {
+    background: #2b54a7;
+}
+
+.facebook-style-dark:active {
+    background: #1d4698;
+    border-color: #1d4698;
+}
+
+.facebook-style-light {
+    background: #f6f7f9;
+    border: solid 1px #ced0d4;
+    color: #4b4f56;
+}
+
+.facebook-style-light:hover {
+    background: #e9ebee;
+}
+
+.facebook-style-light:active {
+    background: #d8dade;
+    border-color: #d8dade;
+}
+
+
+/* 3D Button 1*/
+
+.btn-3d-1 {
+    position: relative;
+    background: orangered;
+    border: none;
+    color: white;
+    padding: 15px 24px;
+    font-size: 1.4rem;
+    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+    outline: none;
+}
+
+.btn-3d-1:hover {
+    background: hsl(16, 100%, 45%);
+}
+
+.btn-3d-1:active {
+    background: hsl(16, 100%, 40%);
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
+}
+
+.btn-3d-1::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    /* border width needs to be size of the element's box shadow */
+    border: solid 6px transparent;
+    /* border width needs to be size of the element's box shadow */
+    border-right: solid 6px hsl(16, 100%, 30%);
+    border-left-width: 0px;
+    background: none;
+    top: 0px;
+    /* needs to be the same size as border width */
+    left: -6px;
+}
+
+.btn-3d-1::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0;
+    border: solid 6px transparent;
+    border-top: solid 6px hsl(16, 100%, 30%);
+    border-bottom-width: 0px;
+    background: none;
+    right: 0;
+    bottom: -6px;
+}
+
+.btn-3d-1:active::before {
+    border: solid 3px transparentl;
+    border-right: solid 3px hsl(16, 100%, 30%);
+    border-left-width: 0xp;
+    left: -3px;
+}
+
+.btn-3d-1:active::after {
+    border: solid 3px transparent;
+    border-top: solid 3px hsl(16, 100%, 30%);
+    border-bottom-width: 0px;
+    bottom: -3px;
+}
+
+
+/* =====================
+   3D BUTTON 2
+   ===================== */
+
+.btn-3d-2 {
+    position: relative;
+    background: #ecd300;
+    background: -webkit-radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    background: -moz-radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    background: -o-radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    background: radial-gradient(hsl(54, 100%, 50%), hsl(54, 100%, 40%));
+    font-size: 1.4rem;
+    text-shadow: 0 -1px 0 #c3af07;
+    color: white;
+    border: solid 1px hsl(54, 100%, 20%);
+    border-radius: 100%;
+    height: 120px;
+    width: 120px;
+    z-index: 4;
+    outline: none;
+    box-shadow: inset 0 1px 0 hsl(54, 100%, 50%), 0 2px 0 hsl(54, 100%, 20%), 0 3px 0 hsl(54, 100%, 18%), 0 4px 0 hsl(54, 100%, 16%), 0 5px 0 hsl(54, 100%, 14%), 0 6px 0 hsl(54, 100%, 12%), 0 7px 0 hsl(54, 100%, 10%), 0 8px 0 hsl(54, 100%, 8%), 0 9px 0 hsl(54, 100%, 6%);
+}
+
+.btn-3d-2:hover {
+    background: #ecd300;
+    background: -webkit-radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+    background: -o-radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+    background: -moz-radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+    background: radial-gradient(hsl(54, 100%, 45%), hsl(54, 100%, 35%));
+}
+
+.btn-3d-2:active {
+    background: #ecd300;
+    /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    /* For Firefox 3.6 to 15 */
+    background: radial-gradient(hsl(54, 100%, 43%), hsl(54, 100%, 33%));
+    top: 2px;
+    box-shadow: inset 0 1px 0 hsl(54, 100%, 50%), 0 2px 0 hsl(54, 100%, 20%), 0 3px 0 hsl(54, 100%, 18%), 0 4px 0 hsl(54, 100%, 16%), 0 5px 0 hsl(54, 100%, 14%), 0 6px 0 hsl(54, 100%, 12%), 0 7px 0 hsl(54, 100%, 10%);
+}
