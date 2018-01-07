@@ -1,0 +1,38 @@
+ul {
+    display: flex;
+    border: 1px solid red;
+    padding: 0;
+    list-style-type: none;
+    background-color: #e8e8e9;
+}
+
+.item-properti {
+    order: 0;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+li {
+    background-color: #8cacea;
+    margin: 8px;
+    padding: 4px;
+}
+
+.item-properti li {
+    height: 100px;
+    width: 100px;
+}
+
+
+/*select first li element within the ul */
+
+li:nth-child(1) {
+    order: 1;
+    /*give it a value higher than 0*/
+}
+
+li:nth-child(3) {
+    order: 3;
+}

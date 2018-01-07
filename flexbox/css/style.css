@@ -1,14 +1,62 @@
 ul {
     display: flex;
-    list-style: none;
-    /* flex-direction: row || column || row-reverse || column-reverse; */
-    flex-wrap: wrap || nowrap || wrap-reverse;
-    /*Keep on taking more flex items 		    breaking (wrapping)*/
+    border: 1px solid red;
+    padding: 0;
+    list-style-type: none;
+    background-color: #e8e8e9;
 }
 
-li {
+.end {
+    /* flex-direction: row || column || row-reverse || column-reverse; */
+    /* flex-wrap: row nowrap, flex-flow: column wrap, flex-flow: coloumn nowrap; */
+    /*  flex-wrap: wrap || nowrap || wrap-reverse  ;*/
+    /*Keep on taking more flex items 		    breaking (wrapping)*/
+    justify-content: flex-end;
+}
+
+.start {
+    /* flex-direction: row || column || row-reverse || column-reverse; */
+    /* flex-wrap: row nowrap, flex-flow: column wrap, flex-flow: coloumn nowrap; */
+    /*  flex-wrap: wrap || nowrap || wrap-reverse  ;*/
+    /*Keep on taking more flex items 		    breaking (wrapping)*/
+    justify-content: flex-start;
+}
+
+.center {
+    /* flex-direction: row || column || row-reverse || column-reverse; */
+    /* flex-wrap: row nowrap, flex-flow: column wrap, flex-flow: coloumn nowrap; */
+    /*  flex-wrap: wrap || nowrap || wrap-reverse  ;*/
+    /*Keep on taking more flex items 		    breaking (wrapping)*/
+    justify-content: center;
+}
+
+.space {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.align-strecth {
+    align-items: stretch;
+    height: 200px;
+}
+
+.align-start {
+    align-items: flex-start;
+    height: 200px;
+}
+
+.align-end {
+    align-items: end;
+    height: 200px;
+}
+
+ul li {
     width: 100px;
     height: 100px;
     background-color: #8cacea;
     margin: 8px;
+    padding: 4px;
 }
