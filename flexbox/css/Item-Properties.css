@@ -25,6 +25,54 @@ li {
     width: 100px;
 }
 
+.flexbasis {
+    flex-basis: auto;
+}
+
+.alignself {
+    height: 200px;
+    justify-content: space-between;
+}
+
+
+/*again, the "li" represents any flex-item*/
+
+.flexshorthand li {
+    flex: 0 1 200px;
+    /* The code above is equal to setting the three properties: flex-grow: 0; flex-shrink: 1; flex-basis: auto */
+    /* If you set only the flex-grow and flex-shrinkvalues, flex-basis would default to zero. */
+}
+
+.flexshorthand-2 li {
+    flex: 0 0 auto;
+}
+
+.flexitem li {
+    flex: auto;
+    border: 2px solid red;
+    margin: 2em;
+}
+
+.navbar li {
+    flex: 0 0 auto;
+}
+
+.navbar li:nth-child(1) {
+    margin-right: auto;
+}
+
+.flexshorthand-3 li:nth-child(1) {
+    flex: 2 1 0;
+}
+
+.flexshorthand-2 li:nth-child(2) {
+    flex: 1 1 0;
+}
+
+.alignself li {
+    align-self: flex-end;
+}
+
 
 /*select first li element within the ul */
 

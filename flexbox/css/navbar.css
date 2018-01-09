@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: cente;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 400px;
+    min-width: 400px;
+    background: #fff;
+    /* top and bot 40, left right 20 */
+    padding: 40px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 55px 50px -20px #b6b6b6;
+    width: 70%;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.twitter {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    color: rgba(117, 117, 117, 1);
+    box-shadow: 5px 10px 20px -20px rgba(85, 175, 238, 1);
+}
+
+.twitter li {
+    cursor: pointer;
+}
+
+.twitter li:hover {
+    color: rgba(85, 172, 238, 1);
+}
+
+.twitter_bird {
+    color: rgba(85, 172, 238, 1);
+    font-size: 1.3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.twitter li:not(:last-child):not(.twitter_bird) {
+    margin-right: 10px;
+}
+
+.twitter li i:not(.fa-twitter):not(.fa-search):not(fa-user-circle-o) {
+    margin-right: 3px;
+}
+
+.twitter li>button {
+    font-size: 0.8em;
+    border: 0;
+    background: rgba(85, 172, 238, 1);
+    color: #fff;
+    border-radius: 100px;
+}
