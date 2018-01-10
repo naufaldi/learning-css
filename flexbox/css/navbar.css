@@ -62,3 +62,78 @@ ul {
     color: #fff;
     border-radius: 100px;
 }
+
+.facebook {
+    display: flex;
+    border: 1px solid red;
+    height: 46px;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    background: rgba(59, 89, 153, 1);
+    color: #fff;
+    font-size: 0.9em;
+    box-shadow: 5px 10px 20px -20px rgba(59, 89, 153, 1);
+}
+
+.facebook_brand i {
+    font-size: 1.5em;
+}
+
+.facebook li:not(:last-child):not(:first-child):not(.facebook_search) {
+    margin-right: 10px;
+}
+
+.facebook_search {
+    margin-right: auto;
+}
+
+.github {
+    display: flex;
+    color: #c9d4e0;
+    height: 46px;
+    align-items: center;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    background: rgba(36, 41, 46, 1);
+    font-size: 0.9em;
+}
+
+.github li:not(.explore) {
+    margin-right: 10px;
+}
+
+.github_brand i {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.explore {
+    margin-right: auto;
+}
+
+.medium {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 5px 10px 20px -20px rgb(162, 240, 197);
+}
+
+.medium_brand {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    color: rgb(23, 184, 76);
+}
+
+.medium li:not(.medium_brand) {
+    margin-right: 10px;
+}
+
+button {
+    margin-left: 10px;
+}
