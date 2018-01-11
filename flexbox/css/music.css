@@ -133,3 +133,44 @@ footer {
     width: 50%;
     align-items: center;
 }
+
+@media screen and (max-width: 64em) {
+    .sm-hide {
+        display: none;
+    }
+    .sm-text-center {
+        text-align: center;
+    }
+    .sm-text-right {
+        text-align: right;
+    }
+    section.content .music-head {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        /*stack image and music details vertically*/
+        align-items: center;
+        padding-right: 40px 0;
+        background-color: #4e4e4e;
+    }
+    .section.content .music-head .catty-music {
+        padding: 0;
+    }
+    /*album art*/
+    .music-head img {
+        width: 150px;
+    }
+    /* album detail */
+    .catty-music div:nth-child(1) p:first-child {
+        margin: 20px 0;
+        font-size: 1em;
+    }
+    /*song lists*/
+    li p {
+        flex: 0 0 50%;
+    }
+    /*music control*/
+    .music-controls {
+        justify-content: space-around;
+    }
+}
