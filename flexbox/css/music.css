@@ -1,0 +1,27 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0;
+    font-family: Lato, sans-serif;
+    color: #222;
+    font-size: 0.9em;
+}
+
+main {
+    flex: 1 0 auto;
+    /*fill the available space*/
+}
+
+footer {
+    flex: 0 0 90px;
+    /*don't grow or shrink - just stay at a height of 90px.*/
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(61, 100, 158, 0.9);
+}
