@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile</title>
+    <style>
+        ul {
+            list-style-type: none;
+            display: flex;
+            border: 1px solid #4e4e4e;
+        }
+        
+        li {
+            flex: 0 0 auto;
+            padding: 10px;
+            margin: 10px;
+            background-color: #8cacea;
+            color: #fff;
+            font-size: 1em;
+        }
+        
+        @media screen and (max-width: 769px) {
+            /* code here only applies to screen devices that have a width lesser than 769px*/
+            ul {
+                /* On smaller devices, switch the direction*/
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li> Home</li>
+        <li> About</li>
+        <li> Contact</li>
+        <li> Register</li>
+        <li> Login</li>
+    </ul>
+</body>
+
+</html>
