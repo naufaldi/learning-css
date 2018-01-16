@@ -3,3 +3,30 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+.sandbox {
+    --primary-color: orange;
+    --base-measurement: 20px;
+    --secondary-color: pink;
+}
+
+.sandbox .box {
+    text-align: center;
+    --text-color: #f3f3f3;
+    color: var(--text-color);
+    background: var(--primary-color);
+    margin: var(--base-measurement);
+    height: calc( var(--base-measurement) * 10);
+    width: calc( var(--base-measurement) * 10);
+    line-height: calc( var(--base-measurement) * 10);
+}
+
+.sandbox .box2 {
+    text-align: center;
+    color: var(--text-color);
+    background: var(--secondary-color);
+    margin: var(--base-measurement);
+    height: calc( var(--base-measurement) * 10);
+    width: calc( var(--base-measurement) * 10);
+    line-height: calc( var(--base-measurement) * 10);
+}
