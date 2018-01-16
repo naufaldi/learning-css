@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+body {
+    flex-direction: column;
+}
+
+header,
+footer {
+    height: 20vh;
+    flex: 1;
+}
+
+main {
+    flex: 1;
+    /* Assuming you didn’t forget, flex: 1 is equivalent to flex-grow: 1 , flex-shrink: 1 and flex-basis: 0 */
+    display: flex;
+}
+
+.grey {
+    background-color: #808080;
+}
+
+.dark-grey {
+    background-color: #3f3b3b;
+}
+
+.white {
+    background-color: azure;
+}
+
+nav,
+aside {
+    width: 20vw;
+}
+
+nav {
+    order: -1;
+}
+
+article {
+    flex: 1;
+}

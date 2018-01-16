@@ -75,3 +75,71 @@ body {
 .card--big {
     transform: scaleX(1.12);
 }
+
+.grey {
+    background-color: #808080;
+}
+
+.row {
+    display: flex;
+}
+
+.row_cell {
+    flex: 1;
+}
+
+.row_cell--2 {
+    flex: 2;
+}
+
+.row_cell--3 {
+    flex: 3;
+}
+
+.row_cel--4 {
+    flex: 4;
+}
+
+.row_cell--5 {
+    flex: 5;
+}
+
+.row_cell--6 {
+    flex: 6;
+}
+
+.row_cell--7 {
+    flex: 7;
+}
+
+.row_cell--8 {
+    flex: 8;
+}
+
+.row_cell--9 {
+    flex: 9;
+}
+
+.row_cell--10 {
+    flex: 10;
+}
+
+.row_cell--11 {
+    flex: 11;
+}
+
+.row_cell--12 {
+    flex: 12;
+}
+
+.row_cell--top {
+    align-self: flex-start;
+}
+
+.row_cell--bottom {
+    align-self: flex-end;
+}
+
+.row_cell--center {
+    align-self: center;
+}

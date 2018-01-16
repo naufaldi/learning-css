@@ -1,0 +1,59 @@
+.media {
+    display: flex;
+    align-items: flex-start;
+    align-items: flex-start;
+}
+
+.media-body {
+    flex: 1;
+}
+
+.grey {
+    background-color: #808080;
+}
+
+.dark-grey {
+    background-color: #3f3b3b;
+}
+
+.white {
+    background-color: azure;
+}
+
+.media-object2 {
+    order: 1
+}
+
+.media2 {
+    display: flex;
+    align-items: flex-start;
+    align-items: flex-start;
+}
+
+.media-body2 {
+    flex: 1;
+}
+
+.form {
+    display: flex;
+}
+
+.form_field {
+    flex: 1;
+}
+
+.form__item {
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    margin: 0
+}
+
+.form {
+    padding: 10px
+}
+
+.form__field {
+    margin: 0;
+}
