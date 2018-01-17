@@ -1,0 +1,27 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.page-content {
+    min-height: 100%;
+    /* negatife is same measurement as footer height: ; */
+    margin-bottom: -120px;
+}
+
+.page-content::after {
+    content: "";
+    display: block;
+}
+
+footer,
+.page-content::after {
+    min-height: 120px;
+}
