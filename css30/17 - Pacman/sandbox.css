@@ -11,4 +11,180 @@
     background: #333;
     box-sizing: border-box;
     overflow: hidden;
+    padding: 20px;
+}
+
+.path::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-top: 12px dotted white;
+    width: 90%;
+    top: 50%;
+    left: 5%;
+    margin-top: -6px;
+}
+
+.pacman {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    animation: mouthForward 5s linear infinite;
+    animation-delay: 0.8s;
+    left: -20%;
+}
+
+.pacman::before,
+.pacman::after {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    position: absolute;
+    border: solid 30px yellow;
+    margin-top: -30px;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    animation: mouthTop 0.7s ease infinite;
+}
+
+.pacman::after {
+    border-color: yellow;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    animation: mouthBottom 0.7s ease infinite;
+}
+
+.ghost {
+    background: red;
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 20%;
+    height: 70%;
+    width: 60px;
+    margin-top: -35px;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    animation: moveForward 5s linear infinite, colourSwap 0.5s linear infinite;
+}
+
+.ghost::before,
+.ghost::after {
+    content: "";
+    position: absolute;
+    background: white;
+    height: 25px;
+    width: 20px;
+    border-radius: 100%;
+    top: 15px;
+    left: 4px;
+}
+
+.ghost::after {
+    left: 28px;
+}
+
+.eyes::before,
+.eyes::after {
+    content: "";
+    position: absolute;
+    background: blue;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    top: 25px;
+    left: 5px;
+    z-index: 99;
+    animation: peeperLeft 0.7s linear infinite;
+}
+
+.eyes::after {
+    left: 30px;
+    animation: peeperRight 0.7s linear infinite;
+}
+
+.skirt {
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid 10px #333;
+    border-top-color: transparent;
+    bottom: -10px;
+}
+
+.skirt::before,
+.skirt::after {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    border: solid 10px #333;
+    border-top-color: transparent;
+    bottom: -10px;
+    left: 10px;
+}
+
+.skirt::after {
+    border-color: #333;
+    border-top-color: transparent;
+    bottom: -10px;
+    left: 30px;
+}
+
+@keyframes moveForward {
+    0% {
+        left: -20px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes colourSwap {
+    50% {
+        background: hotpink;
+    }
+}
+
+@keyframes mouthTop {
+    50% {
+        transform: rotate(44deg);
+    }
+}
+
+@keyframes mouthBottom {
+    50% {
+        transform: rotate(-44deg);
+    }
+}
+
+@keyframes mouthForward {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes peeperLeft {
+    0%,
+    100% {
+        left: 5px;
+    }
+    50% {
+        left: 10px;
+    }
+}
+
+@keyframes peeperRight {
+    0%,
+    100% {
+        left: 30px;
+    }
+    50% {
+        left: 38px;
+    }
 }
