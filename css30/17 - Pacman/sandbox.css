@@ -1,0 +1,14 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+.path {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #333;
+    box-sizing: border-box;
+    overflow: hidden;
+}
