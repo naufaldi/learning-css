@@ -4,7 +4,7 @@
 
    ====================================== */
 
-.tooltop {
+.tooltip {
     position: relative;
     height: 60px;
     width: 250px;
@@ -12,7 +12,52 @@
     color: white;
     text-align: center;
     line-height: 60px;
-    line-height: 60px;
     font-size: 18px;
     margin: 0 auto;
+}
+
+.tooltip::before {
+    position: absolute;
+    z-index: 2;
+    display: none;
+    width: 200px;
+    padding: 10px;
+    font-size: 0.8em;
+    line-height: 1.4em;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    content: attr(title);
+    top: 0;
+}
+
+.tooltip::after {
+    position: absolute;
+    z-index: 3;
+    display: none;
+    width: 0;
+    height: 0px;
+    border: 5px solid transparent;
+    content: "";
+    border-top-color: rgba(0, 0, 0, 0.8);
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+    display: inline-block;
+}
+
+.tooltip.top:before {
+    bottom: calc(100% + 5px);
+    left: 50%;
+    /* Why use transform vs. position? There's a great article on that here: https://medium.com/@ArthurFinkler/css-animations-translate-vs-absolute-positioning-and-background-position-dd39fbdeade5 */
+    transform: translateX(-50%);
+}
+
+.tooltip.top:after {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 0.8);
 }
