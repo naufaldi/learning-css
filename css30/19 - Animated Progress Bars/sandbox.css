@@ -1,0 +1,124 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+.animation-bar-1 {
+    position: relative;
+    display: block;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.animation-bar-1 span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    background-color: #f56982;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
+    animation: progress-bar-1 6s infinite ease;
+}
+
+.animation-bar-1 span::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-size: 100%;
+    background-image: linear-gradient(45deg, #fff 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #fff 50%, #fff 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+    background-size: 30px 30px;
+    opacity: 0.3;
+    animation: progress-bar-after-1 0.5s infinite linear;
+}
+
+@keyframes progress-bar-1 {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 60%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+@keyframes progress-bar-after-1 {
+    0% {
+        background-position: 0 100%;
+    }
+    100% {
+        background-position: 30px 100%;
+    }
+}
+
+.animation-bar-2 {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.8);
+}
+
+.animation-bar-2 span {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 20px;
+    background-color: #00e6e7;
+    background-size: 100%;
+    background-image: linear-gradient(to bottom, #00b3b4, #008081);
+    animation: progress-bar-2 6s infinite ease;
+}
+
+.animation-bar-2 span::before {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-top-color: rgba(0, 0, 0, 1);
+    content: "";
+}
+
+.animation-bar-2 span:after {
+    position: absolute;
+    right: 0;
+    bottom: calc(100% + 5px);
+    z-index: 1;
+    display: inline-block;
+    content: attr(data-label);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+}
+
+@keyframes progress-bar-2 {
+    0% {
+        width: 0px;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
