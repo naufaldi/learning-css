@@ -3,3 +3,66 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+.accordion {
+    position: relative;
+    display: block;
+    background-color: white;
+    border: solid 1px #e0e0e0;
+}
+
+.accordion__item {
+    display: block;
+}
+
+.accordion .accordion__content {
+    display: bloc;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease, padding 0.3s linear;
+}
+
+.accordion .accordion__content p {
+    padding: 20px;
+    margin: 0;
+}
+
+
+/* Ketika target di klik, ini akan dieksekusi */
+
+.accordion .accordion__content:target {
+    height: 150px;
+}
+
+.accordion .accordion__trigger {
+    text-decoration: none;
+}
+
+.accordion .accordion__title {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 10px;
+    font-size: 1em;
+    background: #00B3B4;
+    color: white;
+    border: solid 1px #379AA4;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset, 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+.accordion .accordion__title:hover {
+    background-color: #0bbfc0;
+}
+
+.accordion .accordion__title::after {
+    position: absolute;
+    content: "";
+    top: calc(50% - 7px);
+    right: 20px;
+    width: 7px;
+    height: 7px;
+    border-left: solid 2px white;
+    border-bottom: solid 2px white;
+    transform: rotate(-45deg);
+}
