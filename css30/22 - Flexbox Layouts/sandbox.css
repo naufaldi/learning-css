@@ -1,0 +1,95 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+
+.layout1 main {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout1 article {
+    flex: 1 58%;
+    margin-right: 2%;
+}
+
+.layout2 header {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout2 header nav {
+    flex: 1;
+    margin-left: 2%;
+}
+
+.layout2 main {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout2 article {
+    flex: 1 56%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.layout2 aside.sidenav,
+.layout2 aside.sidenav {
+    flex: 1 20%;
+}
+
+.layout3 header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.layout3 header nav {
+    flex: 1;
+    margin-right: 2%;
+}
+
+.layout3 .articles {
+    display: flex;
+    flex-direction: row;
+}
+
+.layout3 article {
+    flex: 1;
+    margin: 0 2%;
+}
+
+.layout3 article:first-child,
+.layout3 article:last-child {
+    margin: 0;
+}
+
+
+/* Responsive  */
+
+@media screen and (max-width: 768px) {
+    .layout1 main,
+    .layout1 article,
+    .layout1 aside,
+    .layout2 header,
+    .layout2 header .logo,
+    .layout2 header nav,
+    .layout2 main,
+    .layout2 article,
+    .layout2 aside,
+    .layout2 aside.sidenav,
+    .layout2 aside.sidebar,
+    .layout3 main,
+    .layout3 article,
+    .layout3 .articles,
+    .layout3 header,
+    .layout3 header .logo,
+    .layout3 header nav,
+    {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0 0 2%;
+    }
+}

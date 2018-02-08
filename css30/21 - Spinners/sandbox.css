@@ -52,7 +52,7 @@
 }
 
 .spinner-2::before,
-.spinner::after {
+.spinner-2::after {
     position: absolute;
     display: inline-block;
     vertical-align: middle;
@@ -64,13 +64,16 @@
 }
 
 .spinner-2::before {
+    -webkit-transform: translateX(-120%);
     transform: translateX(-120%);
     transform-origin: 32px 50%;
     animation: orbit-1 1s infinite linear;
 }
 
 .spinner-2::after {
+    -webkit-transform: translateX(120%);
     transform: translateX(120%);
+    -webkit-transform-origin: -16px 50%;
     transform-origin: -16px 50%;
     animation: orbit-2 1s infinite linear;
 }
