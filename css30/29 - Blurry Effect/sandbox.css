@@ -3,3 +3,25 @@
     CODE YOUR STYLES BELOW!
 
    ====================================== */
+
+.depth-gallery {
+    position: relative;
+    display: inline-block;
+}
+
+.depth-gallery img {
+    border: solid 7px white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: crosshair;
+    transition: filter 0.3s linear, transform 0.3s linear;
+}
+
+.depth-gallery:hover img {
+    filter: blur(4px);
+    transform: scale(0.9);
+}
+
+.depth-gallery img:hover {
+    filter: blur(0);
+    transform: scale(1.1);
+}
