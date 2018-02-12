@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Transition</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .box {
+            background: #9b59b6;
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+            margin: 10px;
+        }
+        
+        .animated {
+            transition-property: background;
+            transition-duration: 1.5s;
+            transition-timing-function: linear;
+        }
+        
+        .box:hover {
+            background-color: red;
+        }
+        
+        .crazy {
+            transition: transform 3s 1s, background 1s 1s;
+        }
+        
+        .crazy:hover {
+            transform: rotate(720deg) scale(0.5);
+            background: #e67e22;
+            border-radius: 100px;
+        }
+        
+        .big {
+            transition-duration: 1s;
+            transition-property: transform, border-radius;
+        }
+        
+        .big:hover {
+            background: red;
+            transform-origin: top left;
+            transform: scale(2);
+            border-radius: 50%;
+        }
+        
+        .linear {
+            transition-property: transform;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+        }
+        
+        .linear:hover {
+            transform: translateX(300px);
+        }
+        
+        .short {
+            transition: transform 2s ease-in-out 1s, background-color 0.5s linear 0.5s;
+        }
+        
+        .short:hover {
+            transform: translate(30px, 20px);
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="box">NO TRANSITION</p>
+    <p class="animated box"> TRANSITION</p>
+    <p class="crazy box">CRAZINESS</p>
+    <p class="box big">BIG</p>
+    <p class="box linear">linear</p>
+    <p class="box short">short</p>
+</body>
+
+</html>
