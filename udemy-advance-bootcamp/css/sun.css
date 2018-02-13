@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    animation: skylove;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+}
+
+.grass {
+    background: green;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+}
+
+.sun {
+    background: #f1c40f;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+@keyframes skylove {
+    0% {
+        background-color: #2c3e50;
+    }
+    10% {
+        background-color: pink;
+    }
+    30% {
+        background-color: skyblue;
+    }
+    70% {
+        background-color: skyblue;
+    }
+    90% {
+        background-color: pink;
+    }
+    100% {
+        background-color: #2c3e50;
+    }
+}
+
+@keyframes sunlove {
+    0% {}
+    25% {}
+    50% {}
+    75% {}
+    100% {}
+}
