@@ -31,4 +31,4 @@ CSS Animation
 
 6.[ Transition and Transform for Beginner ](https://robots.thoughtbot.com/transitions-and-transforms)
 
-7.
+7.[ CSS trick Flex Grow](https://css-tricks.com/flex-grow-is-weird/)
