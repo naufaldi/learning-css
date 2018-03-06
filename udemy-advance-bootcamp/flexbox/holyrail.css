@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 4%;
+    border: 1px solid #6f8a8ace;
+}
+
+header {
+    background-color: blueviolet;
+    flex: 0 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    background-color: #4eb8b8;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    flex: 1 1 auto;
+    background-color: aqua;
+}
+
+nav {
+    display: flex;
+    background-color: #f2f2f2;
+    flex: 0 0 20%;
+}
+
+aside {
+    background-color: aquamarine;
+    flex: 0 0 20%;
+}
+
+footer {
+    background-color: #ca6ee0;
+    flex: 0 0 120px;
+}
+
+@media screen and (max-width:620px) {
+    .head {}
+}
