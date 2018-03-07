@@ -79,3 +79,48 @@ button:active {
     font-weight: bold;
     font-size: 20px;
 }
+
+.our-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 50px 0;
+    width: 90%;
+}
+
+.our-work h3 {
+    font: bold 32px 'Open Sans', sans-serif;
+    color: #414a4f;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+section p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 0;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+hr {
+    width: 150px;
+    height: 2px;
+    background-color: #2196F3;
+    border: 0;
+    margin-bottom: 80px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    height: 350px;
+    margin: 10px;
+    max-width: 700px;
+}
