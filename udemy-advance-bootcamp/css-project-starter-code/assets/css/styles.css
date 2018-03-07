@@ -39,6 +39,15 @@ li {
     justify-content: center;
 }
 
+section .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 50px 0;
+    margin: 0;
+}
+
 header nav {
     display: flex;
 }
@@ -80,16 +89,16 @@ button:active {
     font-size: 20px;
 }
 
-.our-work {
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 35px 50px 0;
-    width: 90%;
+    margin: 0;
 }
 
-.our-work h3 {
+section h3 {
     font: bold 32px 'Open Sans', sans-serif;
     color: #414a4f;
     text-transform: capitalize;
@@ -117,10 +126,45 @@ hr {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
 }
 
 .gallery img {
-    height: 350px;
+    height: 400px;
     margin: 10px;
-    max-width: 700px;
+    width: 100%;
+}
+
+.gallery .small {
+    width: 450px;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.gallery .large {
+    width: 700px;
+    overflow: hidden;
+    margin: 0px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.feature {
+    background-color: #f7f7f7;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+i {
+    font-size: 20px;
+    color: #2196F3;
 }
