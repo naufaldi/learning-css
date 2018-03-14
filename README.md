@@ -32,3 +32,9 @@ CSS Animation
 6.[ Transition and Transform for Beginner ](https://robots.thoughtbot.com/transitions-and-transforms)
 
 7.[ CSS trick Flex Grow](https://css-tricks.com/flex-grow-is-weird/)
+
+<h2 align="left">
+Javascript Learning 
+</h2>
+
+1.  [Callback Function Javascript](https://blog.framework.id/memahami-callback-untuk-memprogram-asynchronous-di-javascript-a36029d4ebf8)
