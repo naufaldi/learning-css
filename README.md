@@ -38,3 +38,7 @@ Javascript Learning
 </h2>
 
 1.  [Callback Function Javascript](https://blog.framework.id/memahami-callback-untuk-memprogram-asynchronous-di-javascript-a36029d4ebf8)
+
+1.  [Callback Function Javascript](http://adaptivepath.org/ideas/ajax-new-approach-web-applications/)
+
+1.  [Callback Function Javascript](https://blog.framework.id/memahami-callback-untuk-memprogram-asynchronous-di-javascript-a36029d4ebf8)
