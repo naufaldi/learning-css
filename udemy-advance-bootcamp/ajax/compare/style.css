@@ -32,4 +32,12 @@ button {
     font-size: 12px;
     font-weight: bold;
     cursor: pointer;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    color: white;
+    background: #1abc9c;
 }
