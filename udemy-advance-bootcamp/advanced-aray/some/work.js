@@ -25,3 +25,4 @@ function hasComma(str){
 
 hasComma('This is wonderfull'); //false
 hasComma('This is, wonderfulll');
+
