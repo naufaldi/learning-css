@@ -45,3 +45,6 @@ Javascript Learning
 
 5.  [Fetch Documentation](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)
 
+
+6.  [Closure Javascript](http://ambercat.rahmanda.net/code/2016/12/31/closure-javascript.html)
+

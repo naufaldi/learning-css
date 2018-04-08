@@ -20,3 +20,36 @@ function outerFn(){
 
 var outer = outerFn();
 outer();
+
+
+//======================
+
+function counter(){
+    var count = 0;
+    return function(){
+        count++;
+        return count;
+    }
+}
+
+var counter1 = counter();
+
+var counter2 = counter();
+count1;
+count;
+
+
+//======================
+
+function classRoom(){
+    var instructor = ["Elie","col"];
+    return {
+        getInstructors: function(){
+            return instructor;
+        },
+        addInstructor: function(instructor){
+            instructors.push(instruction);
+            return instructors;
+        }
+    }
+}
