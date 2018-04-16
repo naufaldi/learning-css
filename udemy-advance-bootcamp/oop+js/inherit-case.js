@@ -12,3 +12,35 @@
 // 4 - Create a constructor function for a Car. Each object created from the Car function should also have a make, model, and year and a property called numWheels which should be 4. The Car prototype should inherit all of the methods from the Vehicle prototype
 
 // 5 - Create a constructor function for a Motorcycle. Each object created from the Motorcycle function should also have a make, model, and year and a property called numWheels which should be 2. The Motorcycle prototype should inherit all of the methods from the Vehicle prototype
+
+
+
+function Vehicle(make,model,year){
+    this.make = make ;
+    this.model = model;
+    this.year = year;
+}
+
+Vehicle.prototype.start = function(){
+    return "VROOM!";
+}
+
+Vehicle.prototype.toString = function(){
+    return "The make, model, and year are "+ this.make + " " + this.model + " "+ this.year;
+}
+
+function Car(make, model, year){
+    Vehicle.apply(this, arguments)
+    this.nuWheels = 4;
+}
+
+Car.prototype = Object.create(Vehicle.prototype);
+Car.prototype.constructor = Car;
+
+function Motorcycle(make,model,year){
+    Vehicle.apply(this, arguments)
+    this.nuWheels  =2;
+}
+
+Motorcycle.prototype = Object.create(Vehicle.prototype);
+Motorcycle.prototype.constructor = Motorcycle;
