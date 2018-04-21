@@ -38,6 +38,14 @@ var counter2 = counter();
 count1;
 count;
 
+function grammar(string) {
+    if(string == true) {
+    console.log("");
+    } else {
+    console.log("BACOT LU")
+    }
+};
+
 
 //======================
 
