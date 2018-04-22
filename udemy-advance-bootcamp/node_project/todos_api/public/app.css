@@ -69,6 +69,7 @@ li span {
     color: #c0392b;
     transition: all 0.3s;
     opacity: 0;
+    cursor: pointer;
 }
 
 li span:hover {
