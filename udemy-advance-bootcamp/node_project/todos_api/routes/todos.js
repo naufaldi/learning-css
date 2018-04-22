@@ -1,50 +1,19 @@
 var express = require('express');
 var router = express.Router();
 var db = require("../models");
+var helpers = require("../helpers/todos");
 
-router.get('/', function(req,res){
-    db.Todo.find()
-    .then(function(todos){
-        res.json(todos);
-    })
-    .catch(function(err){
-        res.send(err);
-    })
-});
 
-router.post('/', function(req,res){ 
-    db.Todo.create(req.body)
-    .then(function(newTodo){
-        res.status(201).json(newTodo);
-    })
-    .catch(function(err){
-        res.send(err);
-    })
-});
 
-router.get('/:todoId', function(req,res){
-    db.Todo.findById(req.params.todoId)
-    .then(function(foundTodo){
-        res.json(foundTodo)
-    })
-    .catch(function(err){
-        res.send(err);
-    })
-});
+//import dari helpers
+router.route('/')
+.get(helpers.getTodos)
+.post(helpers.createTodo)
 
-router.put('/:todoId', function(req,res){
-    // res.send("Update");
-    db.Todo.findOneAndUpdate({
-        _id: req.params.todoId
-        //new true for update data new
-    }, req.body, {new:true})
-    .then(function(todo){
-        res.json(todo);
-    })
-    .catch(function(err){
-        res.send(err);
-    })
-});
+router.route('/:todoId')
+.get(helpers.getTodo)
+.put(helpers.updateTodo)
+.delete(helpers.deleteTodo)
 
 //export module
 module.exports = router;

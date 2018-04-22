@@ -9,9 +9,13 @@ var todoRoutes = require('./routes/todos');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended : true}));
+app.use(express.static(__dirname + '/public'));
+//gunakan /views
+app.use(express.static(__dirname + '/views'));
 
 app.get('/', function(req,res){
-    res.send("Hello From The Root Route");
+    // res.send("Hello From The Root Route");
+    res.sendFile("index.html");
 });
 
 //prefix all route
