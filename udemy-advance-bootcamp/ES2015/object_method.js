@@ -26,4 +26,4 @@ var instructor = {
     [firstName] : "thats me !"
 }
 
-instructor.Elie; //thats me
+instructor.Elie; //thats me  
