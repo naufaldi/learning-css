@@ -39,3 +39,36 @@ var movieCollector ={
 }
 
 //Using es2015
+class MovieData{
+    constructor(name){
+        this.name = name;
+    }
+    /* jshint ignore:start */
+
+    async getMovie(){
+        var response = await $.getJSON(`https://omdbapi.com?t=${this.name}&apikey=thewdb`);
+        console.log(response);
+    }
+    /* jshint ignore:end */
+
+}
+
+var m = new MovieData('shrek');
+m.getMovie();
+
+//Handling Error
+/* jshint ignore:start */
+
+async function getUser(user) {
+    try {
+        var response = await $.getJSON(`https://api.github.com/users/${user}`);
+        console.log(response.name);
+    } catch(e){
+        console.log("user dont exist");
+    }
+    
+}
+/* jshint ignore:end */
+
+getUser('elie'); //elie schopik
+getUser('human'); //user doest exit
