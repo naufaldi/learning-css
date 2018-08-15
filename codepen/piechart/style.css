@@ -1,0 +1,87 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1em;
+    font-family: 'Proxima Nova', 'Helvetica', sans-serif;
+    letter-spacing: 1px;
+    background: #163C4A;
+    background: linear-gradient(to bottom right, #316F81, #163C4A)!important;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    font-size: 18px;
+    padding: .5em 1em;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    transition: all .2s ease;
+}
+
+button.active {
+    background-color: #f2ae1c;
+    border-color: #f2ae1c;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@keyframes fillup {
+    from {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.pie-container-chart svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.pie-container-chart circle {
+    fill: rgba(255, 255, 255, 0.1);
+    stroke: #f2ae1c;
+    stroke-width: 32;
+    stroke-dasharray: 0 100;
+    transition: stroke-dasharray .5s ease;
+}
+
+.pie-container-chart {
+    margin-bottom: 2em;
+}
+
+.pie-container {
+    position: relative;
+}
+
+.pie-container-percent {
+    position: absolute;
+    right: 18%;
+    top: 22%;
+    font-size: 32px;
+    color: #ffffff;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+@keyframes animated {
+    from {
+        opacity: .25;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.pie-container-percent.animated {
+    animation: animated 1s ease;
+}
