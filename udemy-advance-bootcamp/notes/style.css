@@ -6,12 +6,14 @@ h1 {
     text-align: center;
 }
 
-#notes .preview {
+#notes,
+.preview {
     margin: 0 auto 16px;
     width: 75%;
 }
 
-.note .preview {
+.note,
+.preview {
     border-radius: 8px;
     padding: 10px;
 }
@@ -51,8 +53,9 @@ button {
     border-radius: 5px;
 }
 
-button:focus {
-    outline: none;
+button:hover {
+    cursor: pointer;
+    background-color: #fe2222;
 }
 
 .remove {
@@ -69,4 +72,8 @@ button:focus {
 
 .lucky:hover {
     background-color: #4caf50;
+}
+
+button:focus {
+    outline: none;
 }
