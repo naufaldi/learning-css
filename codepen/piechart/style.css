@@ -48,7 +48,7 @@ button:hover {
 
 .pie-container-chart circle {
     fill: rgba(255, 255, 255, 0.1);
-    stroke: #f2ae1c;
+    stroke: #F2AE1C;
     stroke-width: 32;
     stroke-dasharray: 0 100;
     transition: stroke-dasharray .5s ease;
