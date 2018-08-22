@@ -21,6 +21,6 @@ function startWarsString(id){
         str += `and it takes place on ${res.name}`;
         return str;
     }).then(function(finalString){
-        return finalString
+        return finalString;
     })
 }
