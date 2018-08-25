@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://unpkg.com/react@16.0.0/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/react-dom-factories@1.0.0/index.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Image Gallery</title>
 </head>
 
@@ -16,19 +16,20 @@
 
 <body>
     <div id="app"></div>
-    <script>
-        class Pet extends React.Component {
-            render() {
-                const h2 = ReactDOMFactories.h2(null, "Moxie");
-                const img = ReactDOMFactories.img({
-                    src: "https://github.com/tigarcia/Moxie/raw/master/moxie.png",
-                    alt: "Moxie Cat"
-                });
-                const p = ReactDOMFactories.p(null, " loremLorem ipsum dolor sit amet consectetur adipisicing elit. Facilis unde quis iure aut sunt illum dicta. Reiciendis quo quibusdam vel, nihil eligendi itaque vitae quos modi rem? Quisquam, voluptates culpa. ");
-                return ReactDOMFactories.div(null, h2, img, p);
-            }
-        }
-        ReactDOM.render(React.createElement(Pet), document.getElementById("app"));
+    <script type="text/babel">
+        class Pet extends React.Component { render(){ const style ={fontSize: '1.5em'}; return (
+        <div className="card">
+            <h2 className="name"> Movie </h2>
+            <img src="https://github.com/tigarcia/Moxie/raw/master/moxie.png" />
+            <h5 style={{fontSize: '2em', margin: '2px'}}> Hobbies : </h5>
+            <ul>
+                <li style={style}> Sleeping
+                </li>
+                <li style={style}> Eating </li>
+            </ul>
+        </div>
+        ); } } ReactDOM.render(
+        <Pet/>, document.getElementById("app"));
     </script>
 </body>
 
