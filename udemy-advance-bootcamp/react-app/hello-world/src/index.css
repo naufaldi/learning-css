@@ -1,5 +1,14 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+/* Melihat di public/index.html adalah root */
+
+#root {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

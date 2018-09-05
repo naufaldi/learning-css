@@ -1,4 +1,7 @@
-class HobbyList extends React.Component {
+import React, {Component} from 'react';
+import './Pet.css';
+
+class HobbyList extends Component {
     render() {
         const hobbies = ["sleeping", "eat", "swimming"];
         const style = {fontSize: '1.5em'};
@@ -12,6 +15,4 @@ class HobbyList extends React.Component {
     }
 }
 
-
-ReactDOM.render(
-    <Pet/>, document.getElementById("app"));
+export default HobbyList;
