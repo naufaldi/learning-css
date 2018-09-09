@@ -1,3 +1,11 @@
+(function(){
+    var slidersContainer = document.querySelector('.sliders-container');
+    // Initializing the numbers slider
+    var msNumbers = new MomentumSlider({
+        el:
+    })
+})
+
 var msImages = new MomentumSlider({
     // Element to append the slider
     el: '.slider-container',
