@@ -45,18 +45,12 @@ nav a:hover {
 }
 
 .little-panel {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
   border-radius: 5px;
   font-size: 14px;
   padding: 10px;
 }
 
 .big-panel {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
   border-radius: 10px;
   font-size: 18px;
   padding: 20px;
@@ -79,3 +73,4 @@ nav a:hover {
 .light-button {
   background: #00c000;
 }
+/*# sourceMappingURL=main.css.map */
