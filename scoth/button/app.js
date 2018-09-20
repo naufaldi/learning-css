@@ -2,7 +2,10 @@ let menuButton = document.querySelector(".menu__button");
 let menuWrap = document.querySelector(".menu-wrap");
 
 menuButton.addEventListener("click", () => {
-    menuWrap.classList.toggle("open");
+    // menuWrap.classList.toggle("open");
+    toggleMenu();
+    clearInterval(toggleTimer);
+
 });
 
 let toggleMenu = () => {
