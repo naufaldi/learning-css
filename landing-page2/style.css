@@ -1,3 +1,8 @@
+/* Original Tutorial from https://www.youtube.com/watch?v=bLH-mBuztTA&t=3610s
+Editing and Improve Template from https://github.com/naufaldi/learning-css/tree/master/landing-page2
+
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -59,12 +64,39 @@ body {
     display: flex;
     height: auto;
     background: #fff;
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
 }
 
 .feature {
     display: flex;
     padding: 5px;
+    color: #fff;
+    background-size: cover;
+    position: relative;
+}
+
+.feature-1 {
+    background-image: url(img/power1.jpg);
+}
+
+.feature-2 {
+    background-image: url(img/power2.jpg);
+}
+
+.feature-3 {
+    background-image: url(img/power3.jpg);
+}
+
+.feature:before {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: block;
 }
 
 .icon {
@@ -75,21 +107,26 @@ body {
     padding: 5px 10px;
     color: #F09459;
     border-radius: 13px;
+    z-index: 1;
+    margin: 50px 0;
 }
 
 .feature:hover .icon {
     background-image: linear-gradient(to right, #F09459, #e66586);
     color: #fff;
+    z-index: 1;
 }
 
 .feature-content {
     margin-left: 5px;
     padding: 0px 8px;
+    z-index: 1;
+    margin: 50px 0px;
 }
 
 .feature-content p {
     margin-top: 10px;
-    color: #444;
+    color: #fff;
 }
 
 #our-story {
@@ -132,6 +169,23 @@ body {
     background: #fff;
     color: #999;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.box-team {
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 20%;
+}
+
+.header img {
+    width: 100%;
 }
 
 .letter {
