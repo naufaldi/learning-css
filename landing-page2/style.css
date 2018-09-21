@@ -180,8 +180,18 @@ body {
 
 .box-team {
     box-sizing: border-box;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(230, 101, 134, 0.2);
     width: 20%;
+    margin: 10px;
+    height: 400px;
+}
+
+.team-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header img {
@@ -191,12 +201,15 @@ body {
 .letter {
     width: 100%;
     padding: 70px 0px;
-    background: #fff;
+    background: linear-gradient(to bottom, rgba(230, 101, 134, 0.5), rgba(235, 125, 112, 0.9));
+    z-index: -1;
 }
 
 .control {
     width: 100%;
     text-align: center;
+    z-index: 1;
+    opacity: 1;
 }
 
 .control h3 {
@@ -205,7 +218,7 @@ body {
 }
 
 .control span {
-    color: #999;
+    color: #fff;
     display: block;
     margin: 10px 0px 20px;
 }
@@ -216,6 +229,7 @@ body {
     border: none;
     margin: 0px 10px 20px 0px;
     background: #f1f1f1;
+    padding: 0px 5px;
 }
 
 .input:focus {
@@ -245,6 +259,15 @@ body {
     color: #fff;
     text-align: center;
     padding: 50px 0px;
+}
+
+.contact .fa {
+    font-size: 5vh;
+}
+
+.contact .fa p {
+    font-size: 20px;
+    padding: 20px;
 }
 
 .contact:hover {
