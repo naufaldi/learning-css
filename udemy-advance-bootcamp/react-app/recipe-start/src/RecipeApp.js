@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import Recipe from './Recipe';
+import RecipeInput from './RecipeInput';
 import Navbar from './Navbar';
 import RecipeList from './RecipeList';
 import './RecipeApp.css';
@@ -54,6 +54,7 @@ class RecipeApp extends Component {
     this.setState({recipes});
   }
   render() {
+    const {showForm} = this.state;
     return (
       <div className="App">
       <Navbar onNewRecipe={() => this.setState({showForm: true}) } />
