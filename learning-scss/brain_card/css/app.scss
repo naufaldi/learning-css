@@ -1,0 +1,53 @@
+// Variable
+$black: #333;
+$pale: #d2e1dd;
+$pink: #c69;
+$blue: #039;
+$font-stack : 'Space Mono', monospace;
+$font-size: 14px;
+// Mixins
+@mixin circleThing($rad,$height,$width,$bg,$colour){
+  border-radius: $rad;
+  height: $height;
+  width: $width;
+  line-height: $height;
+  text-align:center;
+  background: $bg;
+  color: $colour;
+  margin: 0 auto;
+
+
+}
+// Style
+
+body {
+  background: $pale;
+  color: $black;
+  font-family: $font-stack;
+  font-size: $font-size;
+
+}
+
+article{
+  background: white;
+  width: 760px;
+  margin: -50px auto;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: -2;
+}
+header {
+  @include circleThing(100%,200px,200px,$blue,white);
+  h1{
+    font-sizing:$font-size+2;
+  }
+}
+
+footer {
+  @include circleThing(100%,150px ,150px ,$black ,$pale );
+  font-size:  $font-size -3;
+  position: relative;
+  z-index: -4;
+  margin-top: -60px;
+}

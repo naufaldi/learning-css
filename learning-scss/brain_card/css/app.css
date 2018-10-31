@@ -1,0 +1,48 @@
+body {
+  background: #d2e1dd;
+  color: #333;
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+}
+
+article {
+  background: white;
+  width: 760px;
+  margin: -50px auto;
+  padding: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  z-index: -2;
+}
+
+header {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+  line-height: 200px;
+  text-align: center;
+  background: #039;
+  color: white;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-sizing: 16px;
+}
+
+footer {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  line-height: 150px;
+  text-align: center;
+  background: #333;
+  color: #d2e1dd;
+  margin: 0 auto;
+  font-size: 14px -3;
+  position: relative;
+  z-index: -4;
+  margin-top: -60px;
+}
+/*# sourceMappingURL=app.css.map */
