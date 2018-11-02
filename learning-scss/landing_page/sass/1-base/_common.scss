@@ -1,0 +1,28 @@
+// Common
+
+body {
+  font-family: $font-stack-consolas
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $sans-serif-2;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 3em;
+}
+.wrapper {
+  @include outer-container;
+}
+.header {
+  @include clearfix;
+  padding: 40px 40px 0;
+}
+.brand {
+  @include hide-text;
+  background: center no-repeat;
+  height: 125px;
+  width: 125px;
+  margin: 15px 0;
+  float: left;
+}

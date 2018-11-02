@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bitter": "^0.3.6",
+    "bourbon": "^5.1.0",
+    "bourbon-neat": "^1.9.1",
+    "neat": "^1.2.2"
+  }
+}
