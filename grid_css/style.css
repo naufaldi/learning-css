@@ -1,0 +1,17 @@
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  grid-gap: 1em;
+}
+
+.wrapper > div {
+  background: #eee;
+  padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+  background-color: #ddd;
+}
+/*# sourceMappingURL=style.css.map */
