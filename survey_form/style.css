@@ -1,0 +1,11 @@
+.form-card {
+  background-color: #d8caca;
+}
+
+.form-group {
+  /* background-color: aquamarine; */
+}
+
+.container {
+  display: flex;
+}
