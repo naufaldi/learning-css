@@ -1,30 +1,24 @@
 .form-card {
-  background-color: #d8caca;
-  -webkit-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.75);
-box-shadow: 10px 10px 25px -8px rgba(0,0,0,0.75);
+  background-color: #B39CD0;
+  -webkit-box-shadow: 10px 10px 25px -8px rgba(251, 234, 255, 1);
+-moz-box-shadow: 10px 10px 25px -8px rgba(251, 234, 255, 1);
+box-shadow: 10px 10px 25px -8px rgba(251, 234, 255, 1);
 }
 
 .container {
   display: flex;
-  flex-direction: column;
+  flex:1;
 }
-form{
-  display: flex;
-  justify-content: space-between;
-  
-}
+
 .form-card {
-  flex: 0 0 30%;
+  flex: 0 0 20vw;
 display: flex;
-flex-direction: column;
-justify-content: center;
+
 }
 .form-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-padding-top: 10vh;
 align-items: center;
 margin: 20px;
 }
@@ -34,14 +28,13 @@ margin: 20px;
   width: 200px;
   padding: 5px;
   margin: 10px;
-  border: 1px solid #c0c0c0;
+  border: 1px solid #B39CD0;
   border-radius: 2px;
 }
 .label-field {
   margin: 10px;
 }
 .select-item {
-
 }
 .dropdown {
   height: 35px;
@@ -49,7 +42,7 @@ margin: 20px;
     padding: 5px;
     margin: 10px;
     margin-top: 15px;
-    border: 1px solid #c0c0c0;
+    border: 1px solid #B39CD0;
     border-radius: 2px;
 }
 ul{
@@ -60,6 +53,7 @@ ul{
   padding: 0;
 }
 li {
+
   margin-left: 20px;
 }
 input[type="radio" i] {

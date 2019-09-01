@@ -1,0 +1,59 @@
+*,*:before, *:after {
+  box-sizing: border-box;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+}
+body{
+  line-height: 1.4;
+  font-family:  $font-body;
+  font-size: 16px;
+}
+header {
+  margin-bottom: 30px;
+  @media screen and (min-width:1024px) {
+    margin-bottom: 40px
+  }
+  img{
+    width: 120px;
+    @media screen and (min-width:1024px) {
+     width: 200px;
+    }
+  }
+}
+a,a:hover {
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width:1024px) {
+   justify-content:flex-end;
+  }
+  > a {
+    transform: translateX(0px);
+    transition: transform 100ms ease-in-out;
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0px;
+    }
+    &:hover{
+      transform: translateX(-3px)
+    }
+  }
+  i.fab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    color: #fff;
+    height: 48px;
+    width: 48px;
+    margin-right: 16px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
