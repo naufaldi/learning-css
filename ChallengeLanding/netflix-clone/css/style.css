@@ -282,6 +282,9 @@ overflow: auto;
   .hide-sm{
     display: none;
   }
+  .showcase-content{
+    margin-top: 3rem;
+  }
   .showcase-top img{
     top: 30%;
     left: 5%;
@@ -294,26 +297,60 @@ overflow: auto;
   .showcase-content p{
     font-size: 1.5rem;
   }
+  .tab-item .fas{
+    font-size: 2.5rem;
+  }
+  .tabs .container > div{
+    padding: 1.25rem 0;
+  }
   .btn-xl{
     font-size: 1.5rem;
     padding: 1.4rem 2rem;
   }
   .text-xl{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   .text-lg{
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .text-md{
-    font-size: 1rem;
+    font-size: 0.875rem;
+  }
+  .btn-lg{
+    font-size: 0.875rem;
   }
   .footer-cols{
     grid-template-columns: repeat(2,1fr);
   }
 }
 @media (max-width: 700px){
+    .showcase-top img{
+      width: 120px;
+    }
+    .showcase-content h1{
+      font-size: 2.5rem;
+    }
+    .showcase-content p{
+      font-size: 1rem;
+    }
   .showcase::after{
-    box-shadow: inset 80px 80px 250px #000, inset -80px -80px 250px #000;
+    box-shadow: inset 40px 40px 250px #000, inset -40px -40px 250px #000;
+  }
+  .btn-lg{
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  .tab-item .fas{
+    font-size: 1.5rem;
+  }
+  .tabs .container > div{
+    padding: 1rem 0;
+  }
+  .table{
+    font-size: 0.625rem;
+  }
+  .table tbody tr td {
+    padding: 0.5rem;
   }
   #tab-1-content .tab-1-content-inner{
     grid-template-columns: 1fr;
@@ -326,5 +363,8 @@ overflow: auto;
   #tab-2-content .tab-2-content-bottom{
     grid-template-columns: 1fr;
 
+  }
+  div#tab-3-content{
+    overflow-x:auto;
   }
 }
