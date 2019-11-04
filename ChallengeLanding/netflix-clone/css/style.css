@@ -324,6 +324,9 @@ overflow: auto;
   }
 }
 @media (max-width: 700px){
+  .container{
+max-width: 90%;
+  }
     .showcase-top img{
       width: 120px;
     }
